@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   lint:
+    if: github.event.repository.name != 'systemd-security'
     runs-on: ubuntu-latest
 
     permissions:
@@ -25,6 +26,6 @@ jobs:
           fetch-depth: 0
 
       - name: Differential ShellCheck
-        uses: redhat-plumbers-in-action/differential-shellcheck@60360c0fb283149ed03ad16b66257a967c3e5231
+        uses: redhat-plumbers-in-action/differential-shellcheck@94fb4dd1977847df7503bdcc7cb1ddbe021ee9e0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
