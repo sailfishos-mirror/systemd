@@ -78,7 +78,7 @@ jobs:
     - name: Build dependencies
       run: sudo apt install --yes makepkg
 
-    - uses: systemd/mkosi@bbe715f42911f9660712377a5b39335b9391ae22
+    - uses: systemd/mkosi@84af20892b61c8e177e391f997ded8b4cb5514f2
 
     - name: Configure
       run: |
