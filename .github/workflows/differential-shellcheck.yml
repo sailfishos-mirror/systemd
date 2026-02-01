@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
 
       - name: Differential ShellCheck
-        uses: redhat-plumbers-in-action/differential-shellcheck@91e2582e40236f831458392d905578d680baa138
+        uses: redhat-plumbers-in-action/differential-shellcheck@d965e66ec0b3b2f821f75c8eff9b12442d9a7d1e
         with:
           # exclude all `.in` files because they may contain unsupported syntax, and they have to be preprocessed first
           exclude-path: '**/*.in'
